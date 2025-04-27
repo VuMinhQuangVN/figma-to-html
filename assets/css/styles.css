@@ -40,6 +40,17 @@ letter-spacing: -0.76px;
   margin-right: auto;
 }
 
+.line-clamp {
+display: -webkit-box;
+-webkit-line-clamp: var(--line-clamp, 1);
+-webkit-box-orient: vertical;
+overflow: hidden;
+}
+
+.line-clamp.line-2{
+  --line-clamp: 2;
+}
+
 .btn {
   display: inline-block;
   /*  display: inline-block thêm padding khoảng đệm */
@@ -58,6 +69,10 @@ letter-spacing: -0.76px;
 .btn:hover{
   opacity: 0.9;
   cursor: pointer;
+}
+
+.break-all{
+  word-break: break-all;
 }
 /* ================================= */
 
@@ -331,7 +346,7 @@ align-items: center;
 }
 
 .popular .course-item{
-  
+flex: 1;
 border-radius: 12px;
 border: 1px solid #E2DFDA;
 background: #FFF;
